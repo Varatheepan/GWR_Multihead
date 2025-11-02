@@ -1,7 +1,3 @@
-#################################################
-	# Kanagarajah Sathursan
-	# ksathursan1408@gmail.com
-#################################################
 from __future__ import print_function, division
 import torch
 import os
@@ -33,8 +29,8 @@ class MNIST(Dataset):
 		return sample
 
 	def get_test_set(self, idx = None):
-	    sample = torch.load(self.test_dir)
-	    return sample
+		sample = torch.load(self.test_dir)
+		return sample
 
 	def get_train_by_task(self, mode, task_id = None, permutation_idx = None):
 		if mode == 'incremental_nc':
